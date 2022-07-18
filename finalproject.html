@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading Challenge | Project by Christianna</title>
+  <head>
+    <style>
+      body {
+        background: linear-gradient(#e66465, #9198e5);
+      }
+      h1 {
+        font-size: 48px;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      h2 {
+        font-size: 32px;
+        font-weight: lighter;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      h3 {
+        font-size: 32px;
+        font-weight: lighter;
+        font-family: Montserrat, sans-serif;
+        text-decoration: wavy;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      img {
+        display: block;
+        max-width:max-content;
+        height: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 25px;
+      }
+      a {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        line-height: 50px;
+        padding: 50px;
+      }
+      button {
+        font-size: 20px;
+        font-family: Montserrat, sans-serif;
+        background: rgb(57, 5, 55);
+        color: rgb(255, 255, 255);
+        display: block;
+        cursor: pointer;
+        margin: 20px auto;
+        box-shadow: 0px 0px 0px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 50px;
+        padding: 25px 30px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: rgb(245, 128, 216);
+        color: rgb(255, 255, 255);
+        opacity: 1px;
+        cursor: pointer;
+      }
+      p {
+        font-size: 20px;
+        font-family: Montserrat, sans-serif;
+        color: #ffffff;
+        display: block;
+        line-height: 25px;
+        text-align: center;
+        padding: 30px;
+        border: 1px olive;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      /* Clearfxi (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>☼ Summer Reading ☼</h1>
+      <h2>Books to Read This Summer</h2>
+      <img
+        src="https://images.pexels.com/photos/6215000/pexels-photo-6215000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="books"
+        width="500px"
+      />
+    </div>
+    <div class="description">
+      <p>
+        Reading challenges are a great way to encourage people of all ages to
+        read and learn more. Reading is a fundamental skill that benefits people
+        of all ages. Join our community of thousands of people and read more
+        than you ever have before. If you need help finding what to read, we've
+        got a few suggestions.
+        <br />
+        <a
+          href="https://www.lifehack.org/articles/lifestyle/10-benefits-reading-why-you-should-read-everyday.html"
+          target="_blank"
+          class="learn-more"
+          ><strong> Read more about it here </strong>
+        </a>
+        <button class="buy-button">Join the Email List</button>
+      </p>
+      <h3>Our Favorites</h2>
+          <div class="row">
+           <div class="column">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81HA6TJ5K-L.jpg" alt="Where the Crawdad Sings Book" style="width:100%">
+           </div>
+           <div class="column">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81ICvbFe2+L.jpg" alt="Vanishing Half Book" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81GPsVIqUKL.jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <script>
+      function learnMore() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+          "Thank you " + name + ", you were sucessfully added to the Challenge!"
+        );
+      }
+      let learnButton = document.querySelector("button");
+      learnButton.addEventListener("click", learnMore);
+    </script>
+    <p>
+      <small> Coded by
+         Christianna Mill with HTML, CSS & Javascript </small>
+    </p>
+  </body>
+</html>
